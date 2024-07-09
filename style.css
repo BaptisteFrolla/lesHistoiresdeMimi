@@ -1,3 +1,39 @@
+.book-background {
+    background-image: url('images/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Modifiez les styles existants pour améliorer la lisibilité */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, nav, main, footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -49,7 +85,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -99,3 +135,162 @@ button:hover {
 .livre h3 {
     margin-top: 10px;
 }
+
+/* Ajoutez ces styles à la fin du fichier style.css */
+
+.biographie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bio-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.bio-contenu {
+    flex: 2;
+    min-width: 300px;
+}
+
+.bio-contenu h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.bio-contenu p {
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .biographie {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-image {
+        margin-bottom: 1rem;
+    }
+}
+
+.message-confirmation {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#contact-form button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  cssCopybody {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.livre {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .livre img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+  }
+  
+  .livre-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .livre:hover {
+    transform: scale(1.05);
+  }
+  
+  .livre:hover img {
+    filter: brightness(0.7);
+  }
+  
+  .livre:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+  .livres-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
