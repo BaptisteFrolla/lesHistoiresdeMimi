@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { titre: "Les 5 Brebis, Une amitié à l'épreuve", image: "brebis.jpg" },
             { titre: "Qui veut jouer à cache-cache ?", image: "cache_cache.jpg" },
             { titre: "Super Faustine", image: "faustine.jpg" },
-            { titre: "Mathilde et Le Prince-Grenouille", image: "mathilde.jpg" }
+            { titre: "Mathilde et Le Prince-Grenouille", image: "mathilde.jpg" },
+            { titre: "Maëlys l'artiste", image: "mathilde.jpg" }
         ];
 
         livres.forEach(livre => {
