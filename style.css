@@ -236,6 +236,23 @@ footer {
 }
 
 
+
+.details{
+
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+}
+
+.details img{
+
+    width: 50%;
+    height: auto;
+    transition: filter 0.3s ease;
+
+}
+
 .livre {
     position: relative;
     overflow: hidden;
